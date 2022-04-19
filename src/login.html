@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="renderer" content="webkit">
+    <title>账号登录 | 商家中心</title>
+    <script>(function () {
+      var serviceMatch = location.search.match(/service=([^&]+)/);
+      window._pageState = {
+        loadTime: Date.now(),
+        service: serviceMatch && serviceMatch[1] || 'none'
+      };
+    })()</script>
+    <script>"use strict";
+    !function () {
+      var e = 0 < arguments.length && void 0 !== arguments[0] ? arguments[0] : "_Owl_", a = window;
+      a[e] || (a[e] = {
+        isRunning: !1,
+        isReady: !1,
+        preTasks: [],
+        dataSet: [],
+        pageData: [],
+        disableMutaObserver: !1,
+        observer: null,
+        use: function (e, t) {
+          this.isReady && a.Owl && a.Owl[e](t), this.preTasks.push({api: e, data: [t]})
+        },
+        add: function (e) {
+          this.dataSet.push(e)
+        },
+        run: function () {
+          var t = this;
+          if (!this.isRunning) {
+            this.isRunning = !0;
+            var e = a.onerror;
+            a.onerror = function () {
+              this.isReady || this.add({type: "jsError", data: arguments}), e && e.apply(a, arguments)
+            }.bind(this), (a.addEventListener || a.attachEvent)("error", function (e) {
+              t.isReady || t.add({type: "resError", data: [e]})
+            }, !0);
+            var i = window.MutationObserver || window.WebKitMutationObserver || window.MozMutationObserver,
+              r = window.performance || window.WebKitPerformance;
+            if (i && r) {
+              var n = -1, s = window.navigator.userAgent;
+              if (-1 < s.indexOf("compatible") && -1 < s.indexOf("MSIE") ? (new RegExp("MSIE (\\d+\\.\\d+);").test(s), n = parseFloat(RegExp.$1)) : -1 < s.indexOf("Trident") && -1 < s.indexOf("rv:11.0") && (n = 11), -1 !== n && n <= 11) return void (this.disableMutaObserver = !0);
+              try {
+                this.observer = new i(function (e) {
+                  t.pageData.push({mutations: e, startTime: r.now()})
+                }), this.observer.observe(document, {childList: !0, subtree: !0})
+              } catch (e) {
+                console.log("mutationObserver err")
+              }
+            } else this.disableMutaObserver = !0
+          }
+        }
+      }, a[e].run())
+    }();</script>
+    <link rel="stylesheet" href="https://s3.meituan.net/mnpm-cdn/@mtfe-uikit-iconfont-0.4.7/global-iconfont.css">
+    <link rel="stylesheet" href="https://s3.meituan.net/mnpm-cdn/@mtfe-uikit-1.1.7/uikit.css">
+    <link rel="stylesheet" href="https://s3plus.meituan.net/static-prod01/com.sankuai.sjst.ecom.feepassport-files/static/views/account/unitive/login/index.a07dd9a1.css">
+    <meta name="lx:category" content="eco">
+    <meta name="lx:appnm" content="fepassport">
+    <meta name="lx:autopv" content="off">
+    <script>!(function (win, doc, ns) {
+      var cacheFunName = '_MeiTuanALogObject';
+      win[cacheFunName] = ns;
+      if (!win[ns]) {
+        var _LX = function () {
+          _LX.q.push(arguments);
+          return _LX;
+        };
+        _LX.q = _LX.q || [];
+        _LX.l = +new Date();
+        win[ns] = _LX;
+      }
+    })(window, document, 'LXAnalytics');
+    //- if ("prod" !== 'prod') {
+    //-   LXAnalytics('config','isDev',true);
+    //- }
+    var service = window._pageState && window._pageState.service || 'none';
+
+    var valLab = {
+      custom: {
+        service: service
+      }
+    };
+
+    LXAnalytics('pageView', valLab, {}, "c_kgerzama");</script>
+    <script>var rohrdata = "";
+    var Rohr_Opt = new Object;
+    Rohr_Opt.Flag = {
+      flag: 100043
+    };
+    Rohr_Opt.LogVal = "rohrdata";
+    </script>
+    <script defer src="https://static.meituan.net/mx/rohr/rohr.min.js"></script>
+    <script src="https://s0.meituan.net/mxx/yoda/yoda.seed.js" async></script>
+    <style id="uisdk-dynamic-style">
+
+        .btn_primary {
+            color: #fff !important;
+            border-color: #3dc6b6 !important;
+            background-color: #3dc6b6 !important;
+        }
+
+        .btn_primary:hover {
+            color: #fff !important;
+            border-color: #20bba9 !important;
+            background-color: #20bba9 !important;
+        }
+
+        .btn_primary-inverted {
+            color: #3dc6b6 !important;
+            border-color: #3dc6b6 !important;
+            background-color: #fff !important;
+        }
+
+        .btn_primary-inverted:hover {
+            color: #fff !important;
+            border-color: #20bba9 !important;
+            background-color: #20bba9 !important;
+        }
+
+
+        .btn_secondary {
+            color: #fff !important;
+            border-color: #ff9d3c !important;
+            background-color: #ff9d3c !important;
+        }
+
+        .btn_secondary:hover {
+            color: #fff !important;
+            border-color: #ff8900 !important;
+            background-color: #ff8900 !important;
+        }
+
+        .btn_secondary-inverted {
+            color: #ff9d3c !important;
+            border-color: #ff9d3c !important;
+            background-color: #fff !important;
+        }
+
+        .btn_secondary-inverted:hover {
+            color: #fff !important;
+            border-color: #ff8900 !important;
+            background-color: #ff8900 !important;
+        }
+
+        .input_error {
+            border-color: #ff5338 !important;
+        }
+
+        .input_primary:focus {
+            border-color: #3dc6b6 !important;
+        }
+    </style>
+    <style id="uisdk-custom-style"></style>
+</head>
+<body>
+<div class="intl_zh-CN" id="app"></div>
+<script>window.isOnline = true;</script>
+<script>window._appConfig = {
+  "app": {
+    "name": "fe.epassport",
+    "publicPath": "https://s3plus.meituan.net/static-prod01/com.sankuai.sjst.ecom.feepassport-files/static/"
+  },
+  "yoda": {"host": "//verify.meituan.com/"},
+  "OCTO_ENV": "prod",
+  "ecom": {
+    "appkey": "com.sankuai.meishi.fe.ecom",
+    "continue": "https://e.meituan.com/meishi/epassport/token?target=https%3A%2F%2Fe.meituan.com%2Fmeishi%2F",
+    "settle": "https://bizvisualmeishi.meituan.com/bizsettle/settle/merchantsSettle?utm_source=login"
+  },
+  "lx": {
+    "uisdk": "c_kgerzama",
+    "kaidianLogin": "c_waimai_e_0kvisxp4",
+    "kaidianSignUp": "c_waimai_e_3bv72ydb",
+    "signup": "c_ik2x2a7q",
+    "recover": "c_79krcf4p",
+    "recoverPassword": "c_3m4qguxi",
+    "recoverAccount": "c_t1rw8eoq",
+    "recoverPartKey": "c_oxj03yg8",
+    "event": {
+      "signup": "b_7w5xdpj4",
+      "signupSendSms": "b_eco_oej0kdpy_mc",
+      "signupSendSmsSuccess": "b_eco_f0u8ety2_mv",
+      "signupSuccess": "b_eco_b_yu735wbe_mv"
+    },
+    "cid": {
+      "newLogin": "c_merchant_jvwkekyd",
+      "wechatLogin": "c_merchant_6o4t4y8j",
+      "accountSelect": "c_merchant_b578mbq9",
+      "recoverPassword": "c_merchant_e54b71it",
+      "recoverAccountNew": "c_merchant_94tvd79e",
+      "oldPhoneVerify": "c_merchant_cgnoiixh"
+    },
+    "bid": {
+      "accountLogin": "b_merchant_h8vcma0q_mc",
+      "phoneLogin": "b_merchant_091jgi4e_mc",
+      "qrcodeLogin": "b_merchant_mxir6nwn_mc",
+      "wechatLogin": "b_merchant_wygvywb9_mc",
+      "bindWechat": "b_merchant_lkeaamq0_mc",
+      "signUpWechat": "b_merchant_lt7adeak_mc",
+      "accountClick": "b_merchant_ydjc4bbn_mc",
+      "accountSelect": "b_merchant_a0v5nbnj_mv",
+      "rightBottomClick": "b_merchant_0drfy80i_mc",
+      "rightBottom2Click": "b_merchant_83dt0k5u_mc",
+      "smsTabRightBottomClick": "b_merchant_a99j349q_mc",
+      "recoverPassword": {
+        "nextBtn": "b_merchant_87n5m0eb_mc",
+        "noPhone": "b_merchant_zcwtwc6f_mc",
+        "noPhoneAlertShow": "b_merchant_sz8jzzy3_mv",
+        "noPhoneAlertSure": "b_merchant_sz8jzzy3_mc"
+      },
+      "recoverAccountNew": {
+        "phoneNextBtn": "b_merchant_igwzhs73_mc",
+        "passwordPrevBtn": "b_merchant_fgywg8vl_mc",
+        "passwordNextBtn": "b_merchant_nlpj7bqz_mc",
+        "evidencePrevBtn": "b_merchant_zqrpf281_mc",
+        "evidenceNextBtn": "b_merchant_9ee3fu2a_mc",
+        "successBackBtn": "b_merchant_fdnm3fkn_mc"
+      },
+      "oldPhoneVerify": {"noPhone": "b_merchant_ukur28di_mc"}
+    },
+    "category": {"new": "merchant", "default": "eco"}
+  },
+  "wechat": {
+    "appid": "wx32e661d337b9b1cc",
+    "qrcodeHost": "https://open.weixin.qq.com/connect/qrconnect",
+    "accessTokenHost": "https://api.weixin.qq.com/sns/oauth2/access_token"
+  },
+  "pikeBusinessId": "sPoIsqfsOgLHShBt",
+  "dpWechatId": "wx34f333d0699bae3d",
+  "host": "https://epassport.meituan.com"
+};</script>
+<script>window._uisdkConfig = {
+  "businessPhone": "400-660-1065",
+  "leftBottomText": "",
+  "isNotAutoSendSms": true
+};</script>
+<script crossorigin="anonymous" src="//www.dpfile.com/app/owl/static/owl_1.9.5.js"></script>
+<script src="//s3plus.meituan.net/v1/mss_e04f71e2355947b881ca385939ca0f40/ccfa-public/shield_mountain/1.0.1/shieldMountainSDK.min.js"></script>
+<script src="https://s3plus.meituan.net/static-prod01/com.sankuai.sjst.ecom.feepassport-files/static/build/commonLibPc.dccf6603.min.js"></script>
+<script src="https://s3plus.meituan.net/static-prod01/com.sankuai.sjst.ecom.feepassport-files/static/views/account/unitive/login/index.3b1353ac.js"></script>
+<script>window.Owl && window.Owl.start({project: 'fe-epassport', devMode: false});
+</script>
+<script>var userAgent = navigator.userAgent.toLowerCase();
+var isSafari =
+  userAgent.indexOf('safari') != -1 && userAgent.indexOf('chrome') == -1;
+var isFrame = window.self !== window.top;
+if (isSafari && isFrame && window.isOnline) {
+  var cookie = window.document.cookie;
+  var redierectUrl = "/setcookie?ref=" + encodeURIComponent(document.referrer);
+  if (!cookie) {
+    window.top.location = redierectUrl;
+  }
+}</script>
+</body>
+</html>
