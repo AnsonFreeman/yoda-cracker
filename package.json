@@ -1,0 +1,33 @@
+{
+  "name": "yoda-cracker",
+  "version": "1.0.0",
+  "description": "Yoda slider cracker",
+  "main": "run.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "cd tests && sh test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnsonFreeman/yoda-cracker.git"
+  },
+  "keywords": [
+    "slider",
+    "crack",
+    "meituan",
+    "yoda"
+  ],
+  "author": "Anson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnsonFreeman/yoda-cracker/issues"
+  },
+  "homepage": "https://github.com/AnsonFreeman/yoda-cracker#readme",
+  "dependencies": {
+    "http": "0.0.1-security",
+    "request": "^2.88.2",
+    "url": "^0.11.0"
+  }
+}
