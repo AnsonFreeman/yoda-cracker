@@ -14368,8 +14368,16 @@ window.Yoda.slider = {};
             ];
             this['data']['env']['count'] = this['count'];
             this['data']['env']['timeout'] = this['timeoutCount'];
-          }
 
+            let xxx = [];
+            aaa =  this['data']['trajectory'][0].point;
+            aaa.forEach((val, index) => {
+              if (aaa[index + 1]) xxx.push([aaa[index + 1][0] - val[0], Math.round((aaa[index + 1][1] - val[1]) * 1000) / 1000, Math.round((aaa[index + 1][2] - val[2]) * 1000) / 1000, aaa[index + 1][3] - val[3]])
+            });
+
+            console.debug(JSON.stringify(xxx));
+          }
+          // window._debug_data = this['data'];
 
 
 
