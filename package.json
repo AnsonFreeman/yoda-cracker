@@ -27,6 +27,7 @@
   "homepage": "https://github.com/AnsonFreeman/yoda-cracker#readme",
   "dependencies": {
     "http": "0.0.1-security",
+    "mock-browser": "^0.92.14",
     "request": "^2.88.2",
     "url": "^0.11.0"
   }

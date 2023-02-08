@@ -1,20 +1,20 @@
-curl 'https://epassport.meituan.com/api/account/login?service=hotel&bg_source=4&loginContinue=https:%2F%2Febooking.meituan.com%2Fgw%2Faccount%2Fbiz%2Fsettoken%3Fredirect_uri%3Dhttps%253A%252F%252Febooking.meituan.com%252Febk%252Flogin%252Fsettoken.html%253Fredirect%253Dhttps%25253A%25252F%25252Febooking.meituan.com%25252Febk%25252Fworkbench%25252Findex.html&loginType=account' \
+curl 'https://epassport.meituan.com/api/account/login?service=hotel&bg_source=4&loginContinue=https:%2F%2Febooking.meituan.com%2Fgw%2Faccount%2Fbiz%2Fsettoken%3Fredirect_uri%3Dhttps%253A%252F%252Febooking.meituan.com%252Febk%252Flogin%252Fsettoken.html&loginType=account' \
   -H 'Accept: application/json' \
-  -H 'Accept-Language: zh' \
-  -H 'Cache-Control: no-cache' \
+  -H 'Accept-Language: zh,en;q=0.9,zh-CN;q=0.8,sq;q=0.7' \
   -H 'Connection: keep-alive' \
   -H 'Content-Type: application/json;charset=UTF-8' \
-  -H 'Cookie: _lxsdk_cuid=1802c1c99ee52-07db49b765f94f-357d6702-1fa400-1802c1c99efc8; uuid=60209c205892aae6c829.1650007517.1.0.0; _lxsdk=1802c1c99ee52-07db49b765f94f-357d6702-1fa400-1802c1c99efc8; logan_session_token=l4qzc0u1q0uowy5k5pei; _lxsdk_s=1802de43356-807-c72-fea%7C%7C2' \
+  -H 'Cookie: test' \
   -H 'Origin: https://epassport.meituan.com' \
-  -H 'Pragma: no-cache' \
-  -H 'Referer: https://epassport.meituan.com/account/unitivelogin?service=hotel&loginsource=14&noSignup=true&bg_source=4&loginurl=https%3A%2F%2Febooking.meituan.com%2Febk%2Flogin%2Flogin.html&continue=https%3A%2F%2Febooking.meituan.com%2Fgw%2Faccount%2Fbiz%2Fsettoken%3Fredirect_uri%3Dhttps%253A%252F%252Febooking.meituan.com%252Febk%252Flogin%252Fsettoken.html%253Fredirect%253Dhttps%25253A%25252F%25252Febooking.meituan.com%25252Febk%25252Fworkbench%25252Findex.html' \
+  -H 'Referer: https://epassport.meituan.com/account/unitivelogin?service=hotel&loginsource=14&noSignup=true&bg_source=4&loginurl=https%3A%2F%2Febooking.meituan.com%2Febk%2Flogin%2Flogin.html&continue=https%3A%2F%2Febooking.meituan.com%2Fgw%2Faccount%2Fbiz%2Fsettoken%3Fredirect_uri%3Dhttps%253A%252F%252Febooking.meituan.com%252Febk%252Flogin%252Fsettoken.html' \
   -H 'Sec-Fetch-Dest: empty' \
   -H 'Sec-Fetch-Mode: cors' \
   -H 'Sec-Fetch-Site: same-origin' \
-  -H 'User-Agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.88 Mobile Safari/537.36' \
-  -H 'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="100", "Google Chrome";v="100"' \
-  -H 'sec-ch-ua-mobile: ?1' \
-  -H 'sec-ch-ua-platform: "Android"' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+  -H 'dnt: 1' \
+  -H 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'sec-gpc: 1' \
   -H 'x-requested-with: XMLHttpRequest' \
-  --data-raw '{"login":"1","part_key":"","password":"2","error":"需要滑块验证","success":"","isFetching":false,"loginType":"account","verifyRequestCode":"","verifyResponseCode":"","captchaCode":"","verifyType":3,"captchaToken":"","rohrToken":"eJyNkmFv2jAQhv+LJfhCBHEch4CEKihloxQKK+3YpqmCYIKXYEeOAxVV//vOIQS+dJpkOa/vzs/r6O4dqeEatd/RJl6GqI1t23bJh4X2TKE2wnW77iEL6RRSHrVt0qKkhR3HQsFVzKOui4mFVuqlj9q/XOxbuOX/NoFvcL4ELspxYZmKIRSgrdZJ2m40WLJM00QqXd8xrrOlqAdy11gGgcyEbmSCa75nsQy5uEmZ2vOAdbZSs7iax1KZKYhgtyrkEw9FlnS0ylh1Fb4WKfdUmKm4k1tWSLfiDGCxlZQRF+G1bx6OYM/vnL/1rd7F1UAKDRz2f5jwAFvxF6BW/Ah7yrSWERMVMlBszRUL9GumeIX0T0yHGio1XPoZmRZPpOUj6QWcv9RgSr45lPQzv3D4h8fFBdRBqmjFRLAtzlys2VtuBXOCoKO7uemog5vQYDM7xPWtJjHCp9B72yjsWdhtgsKkabWwuRadrlnDyfR5bjKFgtSyJGLiWb3n+fxxUoAptrpntOdf5YwDzFhJAx/Il0htkAY9himHfArjAordHwaHl7tReNud9Sa3Tdbtk2mNq8ibpToJj+HTpJfUaq31w3jQj0Y9uknj6WJ89O0HZzbe92c1fae2x++LP1rRH6P07ctmfr/4+bUWDuhjT3TRx1/q+gdn"}' \
+  --data-raw '{"login":"123456","part_key":"","password":"123456","error":"需要滑块验证","success":"","isFetching":false,"loginType":"account","verifyRequestCode":"","verifyResponseCode":"","captchaCode":"","verifyType":3,"captchaToken":"","rohrToken":"eJyVU39v2jAQ/S6W4B8scH44JEhoCk3ZWgotK+3YJlSFYIKXEEe2AxVVv/suATo2rWorWeend3fPlxf7CcmLBeo8oWUaxqhjEEJs6xmjDZOog4wmaToII60g5bSpS9uW47kuwSg64ahBLMfBaC7vA9T5aXgmwR5xZiXzFYg9YxCXzPAh69IZNm1YZdEF1KCV1rnqtFosD5XKhdTNNeO6CLNmJNatMIpEkelWkXHNNywVMc8+KSY3PGLdldAsrVecEoUExrDrmbjlcVbkXS0LVp/HD4eUvS8sZNqtjqxZfs3sw2JzIRKexafnVnQCseo57s2VXqf1SGQadNj7ZOIthMNXAJrzHUTFtBYJy2pWX7IFlyzSD4XkNSvYa5q0VKWlLn1NmR5GpC9D0j/C1aTwAxHYvJ6UNnumA667wP0ftf9C3vsQJR9Gxj/I/QAyK+S9iazXkEXeRHZpWVJaBnt4ah3u3U0m1yOoNIjnYtvEftnVtjFc7WMSmvSxeQgvCSoUXEdA7HLb396fD+Izf9wbnbWZH1g3DS4TZ6x0Hu/i21EvbzS8xdWwHySDHl2q9GY63LnkyhwPN8G4oc/lavdt+ktL+n2gHj8vJ5fTH18acZ9e9zIfPf8Gq80Kvw=="}' \
   --compressed

@@ -38,7 +38,7 @@ var window = {
     if (str instanceof Buffer) {
       buffer = str;
     } else {
-      buffer = Buffer.from(str.toString(), 'binary');
+      buffer = Buffer.from(str?str.toString():'', 'binary');
     }
     return buffer.toString('base64');
   },
@@ -142,6 +142,7 @@ var navigator = {
 };
 
 var document = {
+  getElementsByTagName: function(){},
   documentElement: {
     clientWidth: 1920,
     clientHeight: 1080
