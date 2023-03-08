@@ -5476,7 +5476,7 @@ window.yodaSlide = function (config) {
   headers['sec-ch-ua'] = '"Not_A Brand";v="99"; "Google Chrome";v="109"; "Chromium";v="109"';
   headers['yoda-language'] = 'zh-CN';
   headers['sec-ch-ua-mobile'] = '?0';
-  headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML; like Gecko) Chrome/109.0.0.0 Safari/537.36';
+  headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36';
   headers['sec-ch-ua-platform'] = '"macOS"';
   headers['Accept'] = '*/*';
   headers['Origin'] = 'https://epassport.meituan.com';
