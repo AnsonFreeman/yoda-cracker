@@ -2,8 +2,12 @@ var http = require('http')
 var url = require('url')
 var request = require('request')
 
+
+var ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36';
 var server = http.createServer();
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
+
+
 var slide = require('./src/slider.243a0f0144_replace')
 
 /*
@@ -117,12 +121,6 @@ request.post({
 
 
 
-
-
-
-
-
-
 server.on('request', (req, res) => {
   var requestCode = url.parse(req.url, true).query['request_code'];
   if (!requestCode) {
@@ -151,7 +149,7 @@ server.on('request', (req, res) => {
       'yoda-language': 'zh-CN',
       'Content-Type': 'application/x-www-form-urlencoded',
       'sec-ch-ua-mobile': '?0',
-      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+      'User-Agent': ua,
       'sec-ch-ua-platform': '"macOS"',
       'Accept': '*/*',
       'Origin': 'https://epassport.meituan.com',
@@ -180,7 +178,7 @@ server.on('request', (req, res) => {
       var slide = require('./src/slider.6be1e73237')
       let result = slide.slide(body.data);
       headers = result.headers;
-      headers['User-Agent'] = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36';
+      headers['User-Agent'] = ua;
       headers['yoda-language'] = 'zh-CN';
       console.debug({
         headers: headers,
@@ -212,7 +210,7 @@ server.on('request', (req, res) => {
     }
   })
 })
-
+console.debug(123);
 server.listen('9090', '0.0.0.0', () => {
   console.debug('listening: 0.0.0.0:9090');
 });
